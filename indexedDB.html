@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indexedDB</title>
+    <script>
+        function connectDatabase(){
+            var dbName = "indexedDBTest";
+            var dbVersion = 1;
+            var idb;
+            var dbConnect = indexedDB.open(dbName,dbVersion);
+            dbConnect.onsuccess = function(e){
+                idb = e.target.result;
+                alert("success");
+            };
+            dbConnect.onerror = function(){
+                alert("error");
+            }
+        }
+
+        function createObjectStore(){
+            var dbName = "indexedDBTest";
+            var dbVersion = 1;
+            var idb;
+            var dbConnect = indexedDB.open(dbName,dbVersion);
+            dbConnect.onupgradeneeded = function(e){
+                idb = e.target.result;
+                var name = "user";
+                var optionalParameters = {
+                    keyPath:"userid",
+                    autoIncrement:false
+                };
+                var store = idb.createObjectStore(name,optionalParameters);
+                alert("create success");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="link db" onclick="connectDatabase()">
+    <br>
+    <input type="button" value="create rep" onclick="createObjectStore()">
+</body>
+</html>
