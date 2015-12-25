@@ -1,0 +1,29 @@
+/*未被点击*/
+a:link{
+    color: aqua;
+    text-decoration: dotted;
+}
+/*已被点击*/
+a:visited{
+    color: darkred;
+}
+/*鼠标滑过*/
+a:hover{
+    color: burlywood;
+}
+/*正在点击*/
+a:active{
+    color: blue;
+}
+.a1{
+    background-color: bisque;
+}
+body{
+    padding: 300px;
+}
+
+p{
+    outline-color: cornflowerblue;
+    outline-style: dotted;
+    outline-width: 1px;
+}

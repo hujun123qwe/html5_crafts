@@ -1,0 +1,19 @@
+#tb{
+    /*折叠边框*/
+    border-collapse: collapse;
+    width:400px;
+}
+#tb td,
+#tb th{
+    border: 1px solid bisque;
+    padding: 5px;
+}
+#tb th{
+    text-align: right;
+    background-color: aqua;
+    color: cadetblue;
+}
+#tb tr.alt td{
+    color: black;
+    background-color: aquamarine;
+}

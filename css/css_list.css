@@ -1,0 +1,7 @@
+body{
+    padding-left: 300px;
+}
+li{
+    list-style-image: url("../img/About.png");
+    list-style-position: outside;
+}

@@ -1,0 +1,32 @@
+body{
+    background-color: #666666;
+}
+p{
+    padding: 5px;
+    width:500px;
+    background-color: aqua;
+}
+.div_img{
+    background-image: url("../img/love.jpg");
+    background-position: -500px -500px;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 1920px;
+}
+
+.div_img2{
+    background-image: url("../img/love.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1200px;
+    width: 1920px;
+}
+.div_img3{
+    background-image: url("../img/love.jpg");
+    /*background-position: -500px -500px;*/
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    height: 600px;
+    width: 600px;
+}

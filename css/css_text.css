@@ -1,0 +1,38 @@
+body{
+    padding-left: 200px;
+    padding-right:200px;
+}
+.p1{
+    color:darkblue;
+    text-align: right;
+    text-transform: capitalize;
+}
+.p2{
+    color:darkblue;
+    text-align: right;
+    text-transform: lowercase;
+}
+.p3{
+    color:darkblue;
+    text-align: right;
+    text-transform: uppercase;
+}
+.p4{
+    color:darkblue;
+    text-align: right;
+    text-shadow: 5px 5px 5px red;
+}
+.p5{
+    color:darkblue;
+    text-align: right;
+    text-wrap: normal;
+    width: 100px;
+}
+
+h4{
+    /*首行缩进2个字符*/
+    text-indent: 3em;
+}
+p{
+    font-size: 12px;
+}
