@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 100%;
+    height: 800px;
+    background-color: darkgrey;
+}
+li img{
+    width: 250px;
+    height: 200px;
+}
+ul{
+    float: left;
+    width: 220px;
+    padding-top: 120px;
+    padding-left: 180px;
+}
+li{
+    list-style: none;
+    padding: 5px;
+}
+.stream{
+    -webkit-column-gap:5px;
+    -moz-column-gap:5px;
+    column-gap:5px;
+    column-width: 250px;
+    -moz-column-width: 250px;
+}
+.stream img{
+    width: 250px;
+    height: auto;
+}

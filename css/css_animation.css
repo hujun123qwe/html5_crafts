@@ -1,0 +1,51 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    -moz-transition: width 2s, height 2s, -moz-transform 2s;
+    -ms-transition: width 2s, height 2s, -ms-transform 2s;
+    -o-transition: width 2s, height 2s, -o-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 0.5s;
+}
+.div1:hover{
+    width: 200px;
+    height:200px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    animation: anim 5s;
+}
+@keyframes anim{
+    0%{background-color: aqua; left: 0px; top:0px}
+    25%{background-color: aquamarine; left:100px; top:0px}
+    50%{background-color: darkgray; left: 100px;top:100px;}
+    75%{background-color: gray; left: 0px; top:100px}
+    100%{background-color: aqua; left:0px; top: 0px;}
+}
+@-moz-keyframes anim {
+    0%{background-color: aqua; left: 0px; top:0px}
+    25%{background-color: aquamarine; left:100px; top:0px}
+    50%{background-color: darkgray; left: 100px;top:100px;}
+    75%{background-color: gray; left: 0px; top:100px}
+    100%{background-color: aqua; left:0px; top: 0px;}
+}
+.div3{
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+    -webkit-column-gap:30px;
+    -moz-column-gap:30px;
+    column-gap:30px;
+    column-rule:5px outset #ff33ee;
+    -moz-column-rule: 5px outset #ff33ee;
+}

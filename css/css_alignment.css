@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.div{
+    width: 70%;
+    height: 100px;
+    background-color: aqua;
+    /*居中*/
+    margin: 0 auto;
+}
+.div2 {
+    width: 70%;
+    height: 100px;
+    background-color: rgba(57, 160, 255, 0.26);
+    position: absolute;
+    right: 0px;
+}
+.p1{
+    line-height: 200%;
+    cursor: cell;
+    max-width: 100px;
+}
+.p2{
+    line-height: 80%;
+    cursor: move;
+    max-width: 100px;
+}
+li{
+    display: inline;
+    color: #0001cc;
+}

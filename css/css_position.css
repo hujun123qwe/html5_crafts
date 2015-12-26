@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#position1{
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+}
+#position1 .pic{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    position: relative;
+    top: 30px;
+    left: 130px;
+}
+#position2{
+    width: 100%;
+    height: 300px;
+    background-color: aquamarine;
+}
+#position2 .pic{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    position: absolute;
+}
+#position2 .pic2{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 380px;
+    right: 100px;
+}
+#position3{
+    width: 100%;
+    height: 180px;
+    background-color: aliceblue;
+}
+#position3 .pic{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    position: static;
+}
+

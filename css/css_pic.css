@@ -1,0 +1,23 @@
+body{
+    margin: 10px auto;
+    width: 80%;
+    height: auto;
+    background-color: ghostwhite;
+}
+.image{
+    border: solid 1px darkgrey;
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+img{
+    padding: 5px;
+    padding-bottom: 1px;
+}
+.text{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
