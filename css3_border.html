@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 BORDER</title>
+    <style>
+        div{
+            background-color: aqua;
+            border: dashed 12px gold;
+            padding: 30px;
+            background-image: url("img/mini.png");
+            background-repeat: no-repeat;
+        }
+        .div1{
+            background-clip: border-box;
+            background-origin: border-box;
+        }
+        .div2{
+            background-origin: padding-box;
+            background-clip: padding-box;
+        }
+        .div3{
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">div1，background-clip: border-box;</div>
+<br>
+<div class="div2">div2，background-clip: padding-box;</div>
+<br>
+<div class="div3">div3，background-clip: content-box;</div>
+<br>
+<h3>background-clip即背景切割，background-origin对背景图片的起始点修改</h3>
+<hr>
+<br>
+
+</body>
+</html>

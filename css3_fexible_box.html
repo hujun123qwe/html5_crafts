@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 FLEXIBLE BOX</title>
+    <style>
+        .menu{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .menu li{
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            flex: 1 1 100%;
+        }
+        .menu li:nth-child(3n){
+            background-color: aqua;
+        }
+        .menu li:nth-child(3n+1){
+            background-color: gold;
+        }
+        .menu li:nth-child(3n+2){
+            background-color: darkblue;
+        }
+        .menu li a{
+            color: snow;
+            text-decoration: none;
+        }
+        @media (min-width: 480px){
+            .menu li{
+                flex: 1 1 50%;
+            }
+        }
+        @media (min-width: 768px){
+            .menu li{
+                flex-flow: row nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">RUBY</a></li>
+        <li><a href="#">LESS</a></li>
+        <li><a href="#">SASS</a></li>
+        <li><a href="#">MONGO</a></li>
+        <li><a href="#">CSS3</a></li>
+    </ul>
+
+<br>
+<h3>display: flex; flex-flow: row wrap;</h3>
+</body>
+</html>
