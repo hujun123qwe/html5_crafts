@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 form</title>
+</head>
+<body>
+<form>
+    <input type="text" placeholder="placeholder"><br><br>
+    <input type="text" name="greeting" list="greetings" placeholder="data list" autocomplete="on"><br><br>
+    <datalist id="greetings" style="display: none">
+        <option value="list">input.list</option>
+        <option value="name">input.name</option>
+        <option value="data list">data list</option>
+        <option value="option">option</option>
+        <option value="autocomplete">autocomplete</option>
+    </datalist>
+    <input type="text" pattern="[A-Z]{3}" placeholder="only 3 uppercase"><br><br>
+    <script>
+        function AD(){
+            var txt = document.forms[0]['text'];
+            var val = txt.selectionDirection;
+            alert(val);
+        }
+    </script>
+    <input type="text" name="text">
+    <input type="button" value="Ok" onclick="AD()"><br><br>
+    <script>
+        var cb = document.getElementById("cb");
+        cb.indeterminate = true;
+    </script>
+    <input type="checkbox" indeterminate id="cb">indeterminate&nbsp;
+    <input type="image" src="img/mini.png" alt="submit" width="24" height="24"><-this is button<br><br>
+
+</form>
+</body>
+</html>

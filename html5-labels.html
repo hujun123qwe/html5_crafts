@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 labels</title>
+</head>
+<body>
+<script>
+    function Validate(){
+        var txtName = document.getElementById("txt_name");
+        var btn = document.getElementById("btnValidate");
+        var form = document.getElementById("test_form");
+        if(txtName.value.trim()==""){
+            var label = document.createElement("label");
+            label.setAttribute("for", "txt_name");
+            form.insertBefore(label,txtName);
+            txtName.labels[1].innerHTML = "please input name";
+            txtName.labels[1].setAttribute("style","font-size:9px;color:red;");
+        }
+    }
+</script>
+<form id="test_form">
+    <label id="label" for="txt_name">name:</label><br>
+    <input id="txt_name"><br>
+    <input type="button" id="btnValidate" value="Ok" onclick="Validate()">
+</form>
+</body>
+</html>
