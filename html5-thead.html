@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 thread</title>
+</head>
+<body>
+<script>
+    function show(){
+        var i=0;
+        setInterval(function(){
+            if(i<100){
+                i++;
+                upProgress(i);
+            }
+        }, 100);
+    }
+    function upProgress(newVal){
+        var pro = document.getElementById("p");
+        pro.value = newVal;
+        document.getElementsByTagName("span")[0].textContent = newVal;
+    }
+</script>
+<section>
+    <p>完成百分比<progress id="p" min="0" max="100"></progress><span>0</span>%</p>
+    <input type="button" value="点击" onclick="show()">
+</section>
+    <meter>40/100</meter>
+</body>
+</html>
